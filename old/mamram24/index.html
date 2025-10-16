@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductGO - הכשרות למנהלי מוצר</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 text-center pt-4">
+        <!-- Logo Section -->
+        <div class="logo-container mb-3">
+            <img src="../assets/PGO White.png" alt="ProductGO Logo" class="logo">
+        </div>
+        
+        <h1 class="mb-2">איזה כיף שהגעתם לכאן!</h1>
+        
+        <!-- Company Description -->
+        <p class="lead description">
+            ProductGO היא חברת הכשרות למנהלי מוצר עבור מערכת הביטחון עם התמחות ייחודית בהכשרת לוחמים לתפקידי ניהול מוצר. המסלול שלנו אינו דורש ידע מוקדם בתחום ומעניק למשתתפים את הכלים, הידע, והליווי המקצועי להשפיע על עתיד המערכות הטכנולוגיות של מערכת הביטחון. 
+            <br><br>
+            בנוסף למסלול הכשרת הלוחמים אנו מציעים הכשרות מתקדמות המיועדות למנהלי מוצר בעלי ניסיון של שנתיים ומעלה המיועדים לתפקידי ראש צוות או מהווים מוקד ידע מקצועי בכיר.
+            <br><br>
+            ועם כל זה לא מספיק, אנו מקיימים מפגשי Masterclass ומעגלי שולחנות עגולים אחת לשבועיים המיועדים להעמקת הידע המקצועי בתחומים ספציפיים. מפגשים אלו פתוחים בתשלום לקהל הרחב.
+        </p>
+
+        <form class="w-100 w-md-50 text-right" action="https://formspree.io/f/movqddko" method="POST">
+            <p class="form-header mb-3">תשאירו פרטים ונהיה בקשר!</p>
+            <div class="form-group">
+                <label for="fullName"><span class="text-danger">*</span> שם מלא</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="שם מלא" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><span class="text-danger">*</span> אימייל</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="אימייל" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><span class="text-danger">*</span> טלפון</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="טלפון" required>
+            </div>
+            <div class="form-group">
+                <label for="role"><span class="text-danger">*</span> תפקיד</label>
+                <input type="text" class="form-control" id="role" name="role" placeholder="תפקיד" required>
+            </div>
+            <div class="form-group">
+                <label for="company"><span class="text-danger">*</span> חברה</label>
+                <input type="text" class="form-control" id="company" name="company" placeholder="חברה" required>
+            </div>
+            <div class="form-group">
+                <label for="reason"><span class="text-danger">*</span> למה פנית אלינו?</label>
+                <select class="form-control" id="reason" name="reason" required>
+                    <option value="">בחר סיבה</option>
+                    <option>אני מנהל מוצר מנוסה ומעוניין לסייע בהכשרות</option>
+                    <option>שרתתי כלוחם ואני מעוניין לעבור את הקורס</option>
+                    <option>אני מעוניין להצטרף להכשרות המתקדמות</option>
+                    <option>אני מעוניין להירשם למפגשי Masterclass</option>
+                    <option>אחר</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additional">משהו נוסף (טקסט חופשי)</label>
+                <textarea class="form-control" id="additional" name="additional" rows="3" placeholder="משהו נוסף..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">שלח</button>
+        </form>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+        <p>כל הזכויות שמורות לפרודקט גו בע״מ</p>
+    </footer>
+    </body>
+</html>

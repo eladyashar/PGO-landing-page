@@ -1,0 +1,158 @@
+$light-color: #ffffff;
+$dark-color: #0d2a47;
+$primary-color: #68dbf8;
+$secondary-color: #f2e002;
+
+body {
+  font-family: assistant, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  
+  }
+
+input {
+  border: none;
+  border-bottom: 2px solid $primary-color;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.title {
+  font-size: 8vh;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subheader {
+  font-size: 24px;
+}
+
+.dark-screen {
+  background-color: $dark-color;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button {
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px;
+  width: fit-content;
+  border: none;
+
+  i {
+    transition: 0.3s ease;
+  }
+}
+
+button:hover i {
+  margin-right: 0.5rem;
+  transform: rotate(-45deg);
+}
+
+.costum-button-dark {
+  background-color: $dark-color;
+  color: $primary-color;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+.costum-button-light {
+  background-color: $primary-color;
+  color: $dark-color;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+.costum-button-yellow {
+  background-color: $dark-color;
+  color: $secondary-color;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+.course-pop-up {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $light-color;
+  position: fixed;
+  z-index: 1001;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+
+    .course-img {
+      overflow: hidden;
+      height: 100%;
+      
+      img {
+        height: 100%;
+      }
+    }
+
+    .info-container {
+      overflow-y: auto;
+      direction: ltr;
+
+        .info {
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          gap: 5vh;
+          direction: rtl;
+
+          .course-banner {
+            width: 450px;
+          }
+    
+          .course-info {
+            display: flex;
+            gap: 20px;
+    
+            div {
+              width: 100px;
+              font-size: 20px;
+              font-weight: bold;
+              white-space: nowrap;
+            }
+          }
+        
+      }
+    }
+    
+}
+
+@media (max-width: 767px) {
+  .course-pop-up {
+    flex-direction: column;
+
+    .course-banner {
+      width: 100% !important;
+    }
+
+    .course-img {
+      overflow: hidden;
+      height: 50%;
+      
+      img {
+        width: 100vw;
+        height: auto !important;
+        position: relative;
+        top: -20%;
+      }
+    }
+  }
+}

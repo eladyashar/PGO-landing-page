@@ -1,0 +1,426 @@
+@import "../../styles.scss";
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 100px;
+    direction: rtl;
+    overflow: hidden;
+    color: $dark-color;
+    width: 100%;
+  
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 95px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: $light-color;
+      z-index: 1;
+      padding: 0 100px;
+      
+      div {
+        flex: 1;
+        display: flex;
+  
+        span {
+          padding: 0 5px;
+        }
+  
+        span:hover {
+          cursor: pointer;
+          background-color: $secondary-color;
+        }
+      }
+  
+      .logo {
+        height: 75px;
+      }
+    }
+  
+    .section {
+      padding: 0 100px;
+    }
+  
+    .hero-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      direction: rtl;
+      gap: 20px;
+
+      .hero-image {
+        position: relative;
+
+        .img {
+          max-width: 800px;
+          width: 100%;
+          margin: auto;
+          display: block;
+        }
+
+        .i {
+          position: absolute;
+          width: 13%;
+          max-width: 110px;
+          transform: translateY(0);
+          transition: transform 0.5s;
+        }
+
+        .i:hover {
+          transform: translateY(-5px);
+        }
+  
+        .icon1 {
+          left: 10%;
+          top: 0;
+        }
+
+        .icon2 {
+          right: 10%;
+          top: 10%;
+        }
+      }
+  
+  
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+  
+        .mark {
+          background-color: $secondary-color;
+          padding: 0 15px;
+          color: $dark-color;
+        }
+      }
+    }
+  
+    .advantages-section {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+  
+      .advantage-container {
+        border: 2px solid $primary-color;
+        text-align: center;
+        flex-grow: 1;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 40px;
+        gap: 10px;
+        transform: translateY(0);
+        transition: transform 0.5s;
+  
+        .icon {
+          font-size: 3rem;
+        }
+      }
+
+      .advantage-container:hover {
+        transform: translateY(-5px);
+      }
+    }
+  
+    .courses-section {
+      width: 100%;
+      height: fit-content;
+      background-color: $dark-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $light-color;
+      padding: 50px 0;
+      gap: 30px;
+  
+      .header {
+          padding-right: 100px;
+      }
+      
+        .cards {
+          display: flex;
+          width: 100%;
+          gap: 20px;
+          overflow: auto;
+          padding: 20px;
+  
+          .card {
+            background-color: $light-color;
+            color: $dark-color;
+            height: 350px;
+            min-width: 400px;
+            flex-grow: 1;
+            border: none;
+            border-radius: 0;
+            transform: translateY(0);
+            
+            .image-container {
+              width: 100%;
+              height: 40%;
+              position: relative;
+              overflow: hidden;
+  
+              img {
+                  position: relative;
+                  top: -50%;
+              }
+            }
+  
+            .info {
+              flex-grow: 1;
+              background-color: $light-color;
+              padding: 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+          }
+      }
+    }
+  
+    .testimonials-section {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      
+      .testimonials {
+        display: flex;
+        gap: 20px;
+        
+        .testimonial-container {
+          background-color: $dark-color;
+          color: $light-color;
+          border-radius: 100px;
+          padding: 50px 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          
+          .person-info {
+            display: flex;
+            gap: 10px;
+            
+            i {
+              font-size: 3rem;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      
+      
+    }
+  
+    .partners-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px;
+      
+      img {
+        height: 80%;
+      }
+    }
+  
+    .about-us-section {
+      background-color: $primary-color;
+    
+      .about-us-container {
+        background-color: $light-color;
+        border: 2px solid $primary-color;
+        padding: 40px;
+        display: flex;
+        gap: 40px;
+        margin: auto;
+        margin: 100px;
+        
+      }
+      
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+  
+    .contact-section {
+      .contact-container {
+        background-color: $primary-color;
+        color: $dark-color;
+        padding: 50px 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          
+          
+          button {
+            margin: auto;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  
+    .footer-section {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      padding: 50px 100px;
+      background-color: $dark-color;
+      color: $light-color;
+      
+      .footer-header {
+        font-weight: bold;
+        color: $primary-color;
+      }
+      
+      .footer-logo {
+        width: 20rem;
+      }
+
+      .course-button:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        color: $dark-color;
+        width: fit-content;
+      }
+    }
+    
+    ::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: $light-color;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: $secondary-color;
+    }
+    
+    ::selection {
+      background-color: $secondary-color;
+      color: $dark-color;
+    }
+  }
+
+  @media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1279px) {
+    .title {
+      font-size: 42px;
+    }
+
+    .header {
+      font-size: 32px;
+    }
+
+    .section {
+      padding: 0 50px !important;
+    }
+}
+  
+@media (max-width: 767px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .header {
+      font-size: 32px;
+      padding: 0 !important;
+    }
+  
+    .section {
+      padding: 0 50px !important;
+    }
+  
+    .nav-bar {
+      padding: 0 50px !important;
+  
+      .logo {
+        height: 50px !important;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  
+    .hero-section {
+      flex-direction: column;
+      gap: 50px !important;
+  
+      .img {
+        width: 100% !important;
+      }
+      
+      .content {
+        width: 100% !important;
+      }
+    }
+    
+    .advantages-section {
+      flex-direction: column;
+    }
+  
+    .courses-section {
+      .header {
+        padding: 0 50px !important;
+      }
+    }
+  
+    .testimonials-section {
+      .testimonials {
+        flex-direction: column;
+  
+      }
+    }
+  
+    .about-us-section {
+      .about-us-container {
+        flex-direction: column;
+        
+        padding: 20px !important;
+      }
+    }
+  
+    .contact-section {
+      .contact-container {
+        padding: 50px 30px !important;
+      }
+    } 
+  
+    .partners-section {
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+    
+    .footer-section{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px !important;
+      padding: 100px 0 !important;
+    }
+  }  
