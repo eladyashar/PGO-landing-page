@@ -8,7 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/PGO-landing-page">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
